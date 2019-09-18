@@ -1,8 +1,83 @@
 .container {
-  max-width: 1000px;
-  .header{
-    .title {
+  width: 100vw;
+  max-width: 800px;
+  margin: auto;
+  background: #6e787a;
 
+  .header {
+    display: flex;
+    color: #011C2F;
+
+    .title {
+      vertical-align: top;
+      font-size: 3rem;
+      margin-top: 12rem;
+      text-align: center;
+      padding: 0 7rem;
+      // width: 49%;
+    }
+
+    img {
+      border-radius: 50%;
+      margin-top: 4rem;
+      margin-right: 4rem;
+      // margin-bottom: 2rem;
+      // width: 45%;
+    }
+  }
+
+  .skills {
+    display: flex;
+    color: #011C2F;
+    margin: 3rem auto;
+    border-top: 2px dashed #012f50;
+    padding: 2rem;
+
+    .about {
+      font-size: 1.5rem;
+      text-align: center;
+      width: 49%;
+      margin-left: 4rem;
+      margin-right: 1rem;
+
+      h3 {
+        padding: 1rem;
+        font-size: 2rem;
+      }
+    }
+
+    .list {
+      font-size: 1.5rem;
+      width: 49%;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .work-history {
+    color: #011C2F;
+    border-top: 2px dashed #012f50;
+    padding: 2rem;
+
+    h3 {
+      padding: 0.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .work-table {
+      width: 98%;
+      margin: auto;
+
+      td,
+      th {
+        border-bottom: 1px solid #011C2F;
+        padding: 0.5rem;
+      }
     }
   }
 }

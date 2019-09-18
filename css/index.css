@@ -2,86 +2,86 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
 summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
 time,
-mark,
-audio,
+tr,
+tt,
+u,
+ul,
+var,
 video {
   margin: 0;
   padding: 0;
@@ -115,10 +115,10 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
 blockquote:after,
-q:before,
-q:after {
+blockquote:before,
+q:after,
+q:before {
   content: '';
   content: none;
 }
@@ -129,11 +129,13 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
-html,
-body {
+body,
+html {
   height: 100%;
   font-family: 'Quattrocento Sans', sans-serif;
+  letter-spacing: 1px;
 }
 h1,
 h2,
@@ -141,7 +143,104 @@ h3,
 h4,
 h5 {
   font-family: 'Quattrocento', serif;
+  letter-spacing: 1px;
+}
+.navigation {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #4fa097;
+  border-bottom: 2px dashed #012f50;
+}
+.navigation .logo {
+  height: 13rem;
+  width: 13rem;
+  background: #Fff34c;
+}
+.navigation nav a {
+  font-size: 1.55rem;
+  text-decoration: none;
+  color: #011C2F;
 }
 .container {
-  max-width: 1000px;
+  width: 100vw;
+  max-width: 800px;
+  margin: auto;
+  background: #6e787a;
+}
+.container .header {
+  display: flex;
+  color: #011C2F;
+}
+.container .header .title {
+  vertical-align: top;
+  font-size: 3rem;
+  margin-top: 12rem;
+  text-align: center;
+  padding: 0 7rem;
+}
+.container .header img {
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+.container .skills {
+  display: flex;
+  color: #011C2F;
+  margin: 3rem auto;
+  border-top: 2px dashed #012f50;
+  padding: 2rem;
+}
+.container .skills .about {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 49%;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+.container .skills .about h3 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.container .skills .list {
+  font-size: 1.5rem;
+  width: 49%;
+  text-align: center;
+}
+.container .skills .list h3 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.container .work-history {
+  color: #011C2F;
+  border-top: 2px dashed #012f50;
+  padding: 2rem;
+}
+.container .work-history h3 {
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.container .work-history .work-table {
+  width: 98%;
+  margin: auto;
+}
+.container .work-history .work-table td,
+.container .work-history .work-table th {
+  border-bottom: 1px solid #011C2F;
+  padding: 0.5rem;
+}
+.footer {
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px dashed #012f50;
+  color: #011C2F;
+  background: #4fa097;
+}
+.footer .contact h3 {
+  font-size: 2rem;
+  padding: 1rem;
 }
